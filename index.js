@@ -48,7 +48,7 @@ async function refreshApps(counter) {
     }
     try {
       sleep(2000);
-      await fetch("http://localhost:3000");
+      await fetch("https://node-refresher.onrender.com");
       console.log("Refreshed self");
     } catch (e) {
       console.log(e);
