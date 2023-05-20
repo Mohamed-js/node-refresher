@@ -46,6 +46,13 @@ async function refreshApps(counter) {
     } catch (e) {
       console.log(e);
     }
+    try {
+      sleep(2000);
+      await fetch("http://localhost:3000");
+      console.log("Refreshed self");
+    } catch (e) {
+      console.log(e);
+    }
     console.log(`Refreshed ${++counter} times`);
     sleep(10000);
   }
